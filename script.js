@@ -1,13 +1,13 @@
-var r = prompt("Diameter");
-			r=parseFloat(r) && Number(r);//获取输入的纯数字,其余情况皆转换为NaN
+var dia = prompt("Diameter");
+			dia=parseFloat(dia) && Number(dia);
 			
-			if(!isNaN(r)){//判断用户输入的是否为数值
-				var area=Math.PI*r*r;
-				var cir=2*Math.PI*r;
+			if(!isNaN(dia))
+				var opp=Math.PI*dia*dia;
+				var omtre=2*Math.PI*dia;
 				
-				document.getElementById('r').value= r;
-				document.getElementById('cir').value=cir.toFixed(2);
-				document.getElementById('area').value=area.toFixed(2);
+				document.getElementById('dia').value= dia;
+				document.getElementById('omtre').value=omtre.toFixed(2);
+				document.getElementById('opp').value=opp.toFixed(2);
 			}else{
 				alert("Voer een nummer in")
 			}
